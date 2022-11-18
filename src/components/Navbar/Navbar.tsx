@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="flex justify-between mx-16 p-5">
+    <nav className="hidden md:flex justify-between mx-16 p-5">
       <div>
         <Link to="/" className="font-interBold text-2xl">
           ALEXANDRE BLANQUERO
