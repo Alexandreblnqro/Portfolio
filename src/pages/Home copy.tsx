@@ -2,9 +2,6 @@ import React from "react";
 
 import { motion } from "framer-motion";
 import { Link, useNavigate } from "react-router-dom";
-import SmButton from "../components/Buttons/SmButton/SmButton";
-import SmButtonLink from "../components/Buttons/SmButton/SmButtonLink";
-import SmButtonDownload from "../components/Buttons/SmButton/SmButtonDownload";
 
 function Home() {
   const navigate = useNavigate();
@@ -32,14 +29,54 @@ function Home() {
             </p>
           </div>
           <div className="flex flex-col md:flex-row flex-wrap">
-            <SmButton label="M" url="contact" />
-            <SmButtonLink label="G" url="https://github.com/Alexandreblnqro" />
-            <SmButtonDownload
-              label="C"
-              url="/src/assets/img/cv.pdf"
-              download="CV_alexandre-blanquero.pdf"
-            />
-            <SmButtonLink label="S" url="https://alexandre-blanquero.fr/" />
+            <motion.button
+              className="text-white bg-red font-medium rounded-full text-sm px-6 py-2.5 mr-3 my-4"
+              whileHover={{ width: 250 }}
+              onHoverStart={(e) => {}}
+              onHoverEnd={(e) => {}}
+              whileTap={{ scale: 0.9 }}
+              onClick={() => {
+                navigate("/contact");
+              }}
+            >
+              M
+            </motion.button>
+            <a href="https://github.com/Alexandreblnqro">
+              <motion.button
+                whileHover={{ width: 250 }}
+                onHoverStart={(e) => {}}
+                onHoverEnd={(e) => {}}
+                whileTap={{ scale: 0.9 }}
+                className="text-white bg-red font-medium rounded-full text-sm px-6 py-2.5 mr-3 my-4"
+              >
+                G
+              </motion.button>
+            </a>
+            <a
+              href="/src/assets/img/cv.pdf"
+              download={"CV_alexandre-blanquero.pdf"}
+            >
+              <motion.button
+                whileHover={{ width: 250 }}
+                onHoverStart={(e) => {}}
+                onHoverEnd={(e) => {}}
+                whileTap={{ scale: 0.9 }}
+                className="text-white bg-red font-medium rounded-full text-sm px-6 py-2.5 mr-3 my-4"
+              >
+                C
+              </motion.button>
+            </a>
+            <a href="https://alexandre-blanquero.fr/">
+              <motion.button
+                whileHover={{ width: 250 }}
+                onHoverStart={(e) => {}}
+                onHoverEnd={(e) => {}}
+                whileTap={{ scale: 0.9 }}
+                className="text-white bg-red font-medium rounded-full text-sm px-6 py-2.5 mr-3 my-4"
+              >
+                S
+              </motion.button>
+            </a>
           </div>
         </div>
       </div>
