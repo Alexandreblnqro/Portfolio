@@ -11,11 +11,17 @@ module.exports = {
     extend: {
       colors: {
         red: {
-          DEFAULT: "#E34A47"
+          DEFAULT: "#dc3e3e"
         },
         blue: {
-          DEFAULT: "#0F5A69"
+          DEFAULT: "#155F6F"
+        },
+        gray: {
+          FORM: "#F0F0F0"
         }
+      },
+      height: {
+        '80vh': '85vh',
       }
     },
   },

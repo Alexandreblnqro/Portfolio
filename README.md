@@ -44,3 +44,72 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+return (
+
+<ul>
+<div className={`grid grid-cols-3 grid-flow-row-dense gap-5 px-6 `}>
+{Filterweb.map((data) => {
+count = count + 1;
+if (count > 3) {
+count = 0;
+}
+if (Filterweb.length == 1) {
+return (
+<li key={data.id} className="bg-slate-800 col-span-3">
+{data.category} ({data.title}) - {data.subtitle}
+</li>
+);
+} else if (Filterweb.length == 2) {
+return count === 1 ? (
+<li key={data.id} className="bg-slate-800">
+{data.category} ({data.title}) - {data.subtitle}
+</li>
+) : (
+<li key={data.id} className="bg-slate-800 col-span-2">
+{data.category} ({data.title}) - {data.subtitle}
+</li>
+);
+} else if (Filterweb.length == 3) {
+return count === 1 ? (
+<li key={data.id} className="bg-slate-800">
+{data.category} ({data.title}) - {data.subtitle}
+</li>
+) : count === 2 ? (
+<li key={data.id} className="bg-slate-800">
+{data.category} ({data.title}) - {data.subtitle}
+</li>
+) : (
+<li key={data.id} className="bg-slate-800">
+{data.category} ({data.title}) - {data.subtitle}
+</li>
+);
+}
+})}
+</div>
+</ul>
+);
+};
+
+/\*
+let url: string =
+"https://script.googleusercontent.com/macros/echo?user_content_key=j3IBU0EYBr0I1-IlEqakLM7V0SKzBhhcQJQVVE4kCYN9VB-VKzAt3rr3eLQ1TmwLLjac8dezRZ_9N3vcsXuTAC7YPtzOvpzam5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnN1eg8ZKKHqZ0DaUEqUYiNBM_oYImYtrE8oCy6B7Qb1YpYYqIZSRuBzmvVr3MnH2LLeAxSPX-EFrHkfPyCBTEdyDf4bHQyFrntz9Jw9Md8uu&lib=MHDlpSe69UaqmmSKKcF_xDRNXq4f9lPiK";
+
+fetch(url, {
+mode: "no-cors",
+method: "POST",
+headers: {
+"Content-Type": "application/json",
+"Access-Control-Allow-Origin": "_",
+},
+})
+.then((response) => response.json())
+.then((jsonData) => {
+// jsonData is parsed json object received from url
+console.log(jsonData);
+})
+.catch((error) => {
+// handle your errors here
+console.error(error);
+});
+_/
