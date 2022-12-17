@@ -7,6 +7,12 @@ import Projects from "../../pages/Projects";
 import Tincoffee from "../../pages/Tincoffee";
 
 import { AnimatePresence } from "framer-motion";
+import About from "../../pages/About";
+import Web from "../../pages/Web";
+import Design from "../../pages/Design";
+import Video from "../../pages/Video";
+
+import ProjectManager from "../../pages/ProjectManager";
 
 function RoutesComponent() {
   const location = useLocation();
@@ -17,7 +23,17 @@ function RoutesComponent() {
         <Route path="/" element={<Home />} />
         <Route path="/tincoffee" element={<Tincoffee />} />
         <Route path="/projets" element={<Projects />} />
+        <Route path="/projets/web" element={<ProjectManager type="web" />} />
+        <Route
+          path="/projets/design"
+          element={<ProjectManager type="design" />}
+        />
+        <Route
+          path="/projets/video"
+          element={<ProjectManager type="video" />}
+        />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
         <Route path="/angular" element={<Angular />} />
 
         {/* SHOULD STAY THE LAST ROUTE */}

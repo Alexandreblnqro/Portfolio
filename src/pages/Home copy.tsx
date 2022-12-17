@@ -53,7 +53,7 @@ function Home() {
               </motion.button>
             </a>
             <a
-              href="/src/assets/img/cv.pdf"
+              href="/public/assets/img/cv.pdf"
               download={"CV_alexandre-blanquero.pdf"}
             >
               <motion.button
@@ -80,7 +80,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className=" hidden md:block bg-[url('/src/assets/img/alex_background.png')] bg-cover scale-x-[-1] rounded-lg shadow-xl min-h-[300px]"></div>
+      <div className=" hidden md:block bg-[url('/public/assets/img/alex_background.png')] bg-cover scale-x-[-1] rounded-lg shadow-xl min-h-[300px]"></div>
       <motion.div
         whileHover={{ scale: 1.03 }}
         onHoverStart={(e) => {}}
@@ -90,7 +90,7 @@ function Home() {
       >
         <Link
           to={"/projets"}
-          className="bg-[url('/src/assets/img/projects_background.jpg')] min-h-[300px] bg-cover flex justify-center items-center"
+          className="bg-[url('/public/assets/img/projects_background.jpg')] min-h-[300px] bg-cover flex justify-center items-center"
         >
           <h2 className="font-interBold text-5xl md:text-7xl text-white text-shadow-md">
             Mes projets
@@ -106,7 +106,7 @@ function Home() {
       >
         <Link
           to={"/tincoffee"}
-          className="bg-[url('/src/assets/img/tincoffee_background.jpg')] min-h-[300px] bg-cover flex justify-center items-center"
+          className="bg-[url('/public/assets/img/tincoffee_background.jpg')] min-h-[300px] bg-cover flex justify-center items-center"
         >
           <h2 className="font-interBold text-5xl md:text-7xl text-white text-shadow-md">
             Tincoffee

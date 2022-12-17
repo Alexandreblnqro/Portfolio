@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Cappuccino",
+        "type": "café",
+        "composition": "Expresso + lait (mousseux ou chantilly)",
+        "anecdote": "Le cappuccino n'est pas Italien. Mais provient de l'empire Ottoman. Il a été inventé par un esclave Polonais.",
+        "imgurl": "/assets/img/cappuccino.jpg"
+    },
+    {
+        "name": "Masala chai (mon favori)",
+        "type": "thé",
+        "composition": "Thé + Lait + Canelle + Gingembre + Épices",
+        "anecdote": "Selon les récits, il trouve son origine il y a des milliers d'années dans l'Inde actuelle. Le roi aurait créé le masala chai comme boisson ayurvédique - un mélange d'herbes et d'épices à boire à des fins de guérison.",
+        "imgurl": "/assets/img/MasalaChai.jpg"
+    },
+    {
+        "name": "Espresso",
+        "type": "café",
+        "composition": "Café + eau chaude",
+        "anecdote": "L'espresso est un élément clé de la culture du café. Il est à la base de nombreuses préparations comme le Cappuccino, les Lattes, les Frappés, etc...",
+        "imgurl": "/assets/img/espresso.jpg"
+    },
+    {
+        "name": "Fin de liste",
+        "type": "bonne dégustation",
+        "composition": "",
+        "anecdote": "Découvrez le café dans un Coffee-Shop des alentours et découvrez un océan de saveurs",
+        "imgurl": "/assets/img/end.jpg"
+    }
+]

@@ -1,7 +1,14 @@
 import React from "react";
+import Card from "../components/Card/Card";
 
 function Tincoffee() {
-  return <div className="text-2xl font-bold">Tincoffee</div>;
+  return (
+    <div className="flex justify-center">
+      <div>
+        <Card />
+      </div>
+    </div>
+  );
 }
 
 export default Tincoffee;

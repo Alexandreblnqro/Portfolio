@@ -27,3 +27,14 @@
   .text-shadow-none {
     text-shadow: none;
   }
+
+  .box {
+    @apply
+      bg-indigo-700
+      text-gray-100
+      h-full
+  }
+
+  body{
+     background-color: #111B1D;
+  }
