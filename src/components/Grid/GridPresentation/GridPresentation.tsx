@@ -7,6 +7,14 @@ import { GrMail, GrGithub } from "react-icons/gr";
 import { BsFillPersonFill } from "react-icons/bs";
 import { HiDocumentText } from "react-icons/hi";
 
+{
+  /* 
+
+COMPOSANT QUI GERE SOUS FORMAT GRID MA PRESENTATION SUR LA PAGE D'ACCUEIL
+
+*/
+}
+
 function GridPresentation() {
   return (
     <div className="bg-blue rounded-lg shadow-xl min-h-[300px] col-span-4 md:col-span-3 flex items-center">

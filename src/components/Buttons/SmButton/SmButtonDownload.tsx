@@ -8,6 +8,14 @@ interface SmButtonProps {
   download: string;
 }
 
+{
+  /* 
+
+COMPOSANT QUI GERE LES BOUTONS DE TÉLÉCHARGEMENT
+
+*/
+}
+
 function SmButtonDownload({ label, url, download }: SmButtonProps) {
   return (
     <a href={url} target={"_blank"} download={download}>

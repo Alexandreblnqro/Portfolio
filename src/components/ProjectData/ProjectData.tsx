@@ -12,6 +12,14 @@ interface ProjectDataProps {
   url: string;
 }
 
+{
+  /* 
+
+COMPOSANT QUI GERE LES DONNEES DES PROJETS
+
+*/
+}
+
 function ProjectData({ id, category, title, subtitle, url }: ProjectDataProps) {
   return (
     <motion.div

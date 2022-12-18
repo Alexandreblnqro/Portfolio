@@ -1,115 +1,51 @@
-# Getting Started with Create React App
+## Présentation et contexte
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ce projet a été réalisé pour mon prof de programmation préféré dans sa technologie préféré pour mon rendu préféré
 
-## Available Scripts
+## Stack technique
 
-In the project directory, you can run:
+Le projet est basé sur le framework [React 18.2](https://reactjs.org/)
 
-### `npm start`
+> **Prérequis**
+>
+> - [Framer Motion (7.6.7)](https://yarnpkg.com/)
+> - [React Router Dom (6.4.3)](https://www.docker.com/)
+> - [React Icons (4.7.1)](https://www.docker.com/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Installer le projet
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Pour installer le projet, il faut utiliser la commande:
 
-### `npm test`
+```
+npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Les différentes étapes du projet
 
-### `npm run build`
+### First step
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Au début, le projet aurait du être réalisé en format Parallax avec React Spring, mais la gestion des images, et du responsive, était pas au point et assez contraignant à travailler avec.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p align="center">
+  <img src="readme/first-step.png" />
+</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Second step
 
-### `npm run eject`
+Ensuite j'ai essayé de simplifier le parralax avait un carousel textuel, afin de garder l'idée d'un porfolio sous format d'histoire
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<p align="center">
+  <img src="readme/second-step.png" />
+  <img src="readme/second-step-mobile.png" />
+</p>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Troisième étape
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Ensuite j'ai abandonné l'idée de raconter une histoire, et j'ai voulu produire quelque-chose que je n'avais jamais fait ou vu pour casser les codes que je connaissait. Au début coloré, puis ayant pris partie d'une cohérence graphique basé sur les couleurs de ma chemise habituelle.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-return (
-
-<ul>
-<div className={`grid grid-cols-3 grid-flow-row-dense gap-5 px-6 `}>
-{Filterweb.map((data) => {
-count = count + 1;
-if (count > 3) {
-count = 0;
-}
-if (Filterweb.length == 1) {
-return (
-<li key={data.id} className="bg-slate-800 col-span-3">
-{data.category} ({data.title}) - {data.subtitle}
-</li>
-);
-} else if (Filterweb.length == 2) {
-return count === 1 ? (
-<li key={data.id} className="bg-slate-800">
-{data.category} ({data.title}) - {data.subtitle}
-</li>
-) : (
-<li key={data.id} className="bg-slate-800 col-span-2">
-{data.category} ({data.title}) - {data.subtitle}
-</li>
-);
-} else if (Filterweb.length == 3) {
-return count === 1 ? (
-<li key={data.id} className="bg-slate-800">
-{data.category} ({data.title}) - {data.subtitle}
-</li>
-) : count === 2 ? (
-<li key={data.id} className="bg-slate-800">
-{data.category} ({data.title}) - {data.subtitle}
-</li>
-) : (
-<li key={data.id} className="bg-slate-800">
-{data.category} ({data.title}) - {data.subtitle}
-</li>
-);
-}
-})}
-</div>
-</ul>
-);
-};
-
-/\*
-let url: string =
-"https://script.googleusercontent.com/macros/echo?user_content_key=j3IBU0EYBr0I1-IlEqakLM7V0SKzBhhcQJQVVE4kCYN9VB-VKzAt3rr3eLQ1TmwLLjac8dezRZ_9N3vcsXuTAC7YPtzOvpzam5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnN1eg8ZKKHqZ0DaUEqUYiNBM_oYImYtrE8oCy6B7Qb1YpYYqIZSRuBzmvVr3MnH2LLeAxSPX-EFrHkfPyCBTEdyDf4bHQyFrntz9Jw9Md8uu&lib=MHDlpSe69UaqmmSKKcF_xDRNXq4f9lPiK";
-
-fetch(url, {
-mode: "no-cors",
-method: "POST",
-headers: {
-"Content-Type": "application/json",
-"Access-Control-Allow-Origin": "_",
-},
-})
-.then((response) => response.json())
-.then((jsonData) => {
-// jsonData is parsed json object received from url
-console.log(jsonData);
-})
-.catch((error) => {
-// handle your errors here
-console.error(error);
-});
-_/
+<p align="center">
+  <img src="readme/third-step.png" />
+  <img src="readme/third-step2.png" />
+  <img src="readme/third-step-mobile.png" />
+  Et ici une ébauche de version mobile qui as pu être produite en pensant à une application mobile mais cela ne m'a pas convaincu.
+</p>
