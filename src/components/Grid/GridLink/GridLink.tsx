@@ -9,6 +9,14 @@ interface gridLinkProps {
   linkUrl: string;
 }
 
+{
+  /* 
+
+COMPOSANT QUI GERE LES LIENS SOUS FORMAT DE GRID
+
+*/
+}
+
 function GridLink({ label, imgUrl, linkUrl }: gridLinkProps) {
   return (
     <motion.div

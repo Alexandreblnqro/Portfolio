@@ -1,3 +1,4 @@
+/* eslint-disable no-lone-blocks */
 import React, { useEffect, useState } from "react";
 import {
   motion,
@@ -8,6 +9,14 @@ import {
 
 import coffeedata from "../../data/coffee.json";
 
+{
+  /* 
+
+COMPOSANT QUI GERE LE SWIPE DES CARTES DE CAFÉ
+
+*/
+}
+
 function Card() {
   const x = useMotionValue(0);
   const xInput = [-100, 0, 100];
@@ -16,6 +25,7 @@ function Card() {
     "rgb(227, 74, 71)",
     "rgb(64, 154, 62)",
   ]);
+
   const tickPath = useTransform(x, [10, 100], [0, 1]);
   const crossPathA = useTransform(x, [-10, -55], [0, 1]);
   const crossPathB = useTransform(x, [-50, -100], [0, 1]);
@@ -33,20 +43,28 @@ function Card() {
       drag="x"
       dragConstraints={{ left: 0, right: 0 }}
       onDragEnd={(event, info) => {
+        {
+          /* Si x < 170 (swipe gauche) alors c'est un Nope et change l'index de la donnée JSON */
+        }
         if (Math.abs(info.point.x) < 170) {
           console.log("Nope");
           if (dataIndex !== coffeedata.length - 1) {
             setDataIndex(dataIndex + 1);
+          }
+          {
+            /* Si x > 700 (swipe droite) alors c'est un Like et change l'index de la donnée JSON */
           }
         } else if (info.point.x > 700) {
           if (dataIndex !== coffeedata.length - 1) {
             setDataIndex(dataIndex + 1);
           }
           console.log("Like");
+          {
+            /* Si le mouvemebt est pas assez prononcé, revient à la position de départ */
+          }
         } else if (Math.abs(info.point.x) <= 150) {
           animControls.start({ x: 0 });
           console.log(info.point.x);
-        } else {
         }
       }}
     >
@@ -84,9 +102,6 @@ function Card() {
             alt=""
           />
         </div>
-        <div></div>
-        {/*Boutons*/}
-        <div></div>
       </div>
       <div>
         <div className="m-2">

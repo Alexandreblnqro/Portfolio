@@ -9,6 +9,14 @@ interface SmButtonProps {
   widthMovement?: number;
 }
 
+{
+  /* 
+
+COMPOSANT QUI GERE LES BOUTONS DE LIEN
+
+*/
+}
+
 function SmButtonLink({ label, url }: SmButtonProps) {
   return (
     <a href={url}>

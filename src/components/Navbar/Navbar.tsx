@@ -5,6 +5,14 @@ import { Link } from "react-router-dom";
 import { AiFillHome, AiFillProject } from "react-icons/ai";
 import { FaCoffee } from "react-icons/fa";
 
+{
+  /* 
+
+COMPOSANT QUI GERE LA NAVBAR (Bravo sherlock)
+
+*/
+}
+
 function Navbar() {
   return (
     <nav className="flex justify-between mx-16 p-5 text-white">

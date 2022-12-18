@@ -1,9 +1,18 @@
+/* eslint-disable no-lone-blocks */
 import { useState } from "react";
 import ProjectData from "../components/ProjectData/ProjectData";
 import projects from "../data/projects.json";
 
 interface ProjectManagerProps {
   type: string;
+}
+
+{
+  /* 
+
+COMPOSANT QUI GERE LA PAGE DE CONTENU D'UN PROJET, AFIN DE NE PAS AVOIR UNE PAGE PAR CATÉGORIE DE PROJET
+
+*/
 }
 
 const ProjectManager = ({ type }: ProjectManagerProps) => {

@@ -8,11 +8,16 @@ import Tincoffee from "../../pages/Tincoffee";
 
 import { AnimatePresence } from "framer-motion";
 import About from "../../pages/About";
-import Web from "../../pages/Web";
-import Design from "../../pages/Design";
-import Video from "../../pages/Video";
 
 import ProjectManager from "../../pages/ProjectManager";
+
+{
+  /* 
+
+COMPOSANT QUI GERE LE ROUTING DE L'APPLICATION
+
+*/
+}
 
 function RoutesComponent() {
   const location = useLocation();
