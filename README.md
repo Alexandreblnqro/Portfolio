@@ -20,6 +20,11 @@ Pour installer le projet, il faut utiliser la commande:
 npm install
 ```
 
+Pour le lancer:
+```
+npm start
+```
+
 ## Les différentes étapes du projet
 
 ### First step
